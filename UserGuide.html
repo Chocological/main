@@ -1,57 +1,28 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Asciidoctor 1.5.6.1"><title>AddressBook Level 4 - User Guide</title><link rel="stylesheet" href="stylesheets/gh-pages.css">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Asciidoctor 1.5.6.1"><title>NUSSU Connect - User Guide</title><link rel="stylesheet" href="stylesheets/gh-pages.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="stylesheets/coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level3">AB-3</a></li><li class="nav-item"><a class="nav-link active" href="index.html">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="index.html">AddressBook-Level4</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link active" href="UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link" href="DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/se-edu/addressbook-level4"><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>AddressBook Level 4 - User Guide</h1></div><div id="content"><div id="preamble">
+<link rel="stylesheet" href="stylesheets/coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level3">AB-3</a></li><li class="nav-item"><a class="nav-link active" href="index.html">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="index.html">NUSSU Connect</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link active" href="UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link" href="DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/CS2113-AY1819S1-F09-1/NUSSU-Connect"><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>NUSSU Connect - User Guide</h1></div><div id="content"><div id="preamble">
 <div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
-<p>By: <code>Team SE-EDU</code>      Since: <code>Jun 2016</code>      Licence: <code>MIT</code></p>
+<p>By: <code>Team F09-1</code>      Since: <code>Sept 2018</code></p>
 </div>
-</div>
-<div id="toc" class="toc">
-<div id="toctitle"></div>
-<ul class="sectlevel1">
-<li><a href="#introduction">1. Introduction</a></li>
-<li><a href="#quick-start">2. Quick Start</a></li>
-<li><a href="#Features">3. Features</a>
-<ul class="sectlevel2">
-<li><a href="#viewing-help-code-help-code">3.1. Viewing help : <code>help</code></a></li>
-<li><a href="#adding-a-person-code-add-code">3.2. Adding a person: <code>add</code></a></li>
-<li><a href="#listing-all-persons-code-list-code">3.3. Listing all persons : <code>list</code></a></li>
-<li><a href="#editing-a-person-code-edit-code">3.4. Editing a person : <code>edit</code></a></li>
-<li><a href="#locating-persons-by-name-code-find-code">3.5. Locating persons by name: <code>find</code></a></li>
-<li><a href="#deleting-a-person-code-delete-code">3.6. Deleting a person : <code>delete</code></a></li>
-<li><a href="#selecting-a-person-code-select-code">3.7. Selecting a person : <code>select</code></a></li>
-<li><a href="#listing-entered-commands-code-history-code">3.8. Listing entered commands : <code>history</code></a></li>
-<li><a href="#undoing-previous-command-code-undo-code">3.9. Undoing previous command : <code>undo</code></a></li>
-<li><a href="#redoing-the-previously-undone-command-code-redo-code">3.10. Redoing the previously undone command : <code>redo</code></a></li>
-<li><a href="#clearing-all-entries-code-clear-code">3.11. Clearing all entries : <code>clear</code></a></li>
-<li><a href="#exiting-the-program-code-exit-code">3.12. Exiting the program : <code>exit</code></a></li>
-<li><a href="#saving-the-data">3.13. Saving the data</a></li>
-<li><a href="#encrypting-data-files-code-coming-in-v2-0-code">3.14. Encrypting data files <code>[coming in v2.0]</code></a></li>
-</ul>
-</li>
-<li><a href="#faq">4. FAQ</a></li>
-<li><a href="#command-summary">5. Command Summary</a></li>
-</ul>
-</div>
-</div>
-<div class="sect1">
-<h2 id="introduction"><a class="link" href="#introduction">1. Introduction</a></h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>AddressBook Level 4 (AB4) is for those who <strong>prefer to use a desktop app for managing contacts</strong>. More importantly, AB4 is <strong>optimized for those who prefer to work with a Command Line Interface</strong> (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, AB4 can get your contact management tasks done faster than traditional GUI apps. Interested? Jump to the <a href="#quick-start">Section 2, &#8220;Quick Start&#8221;</a> to get started. Enjoy!</p>
+<p>== Introduction</p>
 </div>
+<div class="paragraph">
+<p>NUSSU-Connect is an application for executive committee (exco) members of the NUS Student Union (NUSSU) to help them perform their daily tasks including managing recruitment, contacts, budgets and projects efficiently.</p>
 </div>
+<div class="paragraph">
+<p>== Quick Start</p>
 </div>
-<div class="sect1">
-<h2 id="quick-start"><a class="link" href="#quick-start">2. Quick Start</a></h2>
-<div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
 <p>Ensure you have Java version <code>9</code> or later installed in your Computer.</p>
 </li>
 <li>
-<p>Download the latest <code>addressbook.jar</code> <a href="https://github.com/se-edu/addressbook-level4/releases">here</a>.</p>
+<p>Download the latest <code>addressbook.jar</code> <a href="https://github.com/CS2113-AY1819S1-F09-1/main/releases">here</a>.</p>
 </li>
 <li>
 <p>Copy the file to the folder you want to use as the home folder for your Address Book.</p>
@@ -88,15 +59,13 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 </div>
 </li>
 <li>
-<p>Refer to <a href="#Features">Section 3, &#8220;Features&#8221;</a> for details of each command.</p>
+<p>Refer to <a href="#Features">[Features]</a> for details of each command.</p>
 </li>
 </ol>
 </div>
+<div id="Features" class="paragraph">
+<p>== Features</p>
 </div>
-</div>
-<div class="sect1">
-<h2 id="Features"><a class="link" href="#Features">3. Features</a></h2>
-<div class="sectionbody">
 <div class="exampleblock">
 <div class="content">
 <div class="paragraph">
@@ -120,14 +89,187 @@ e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> wil
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="viewing-help-code-help-code"><a class="link" href="#viewing-help-code-help-code">3.1. Viewing help : <code>help</code></a></h3>
+<div class="paragraph">
+<p>=== Logging into system: <code>login</code></p>
+</div>
+<div class="paragraph">
+<p>Logs into application using relevant credentials.<br>
+Format: <code>login USERID PASSWORD</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>USERID refers to student matriculation number</p>
+</li>
+<li>
+<p>PASSWORD refers to the password associated with the existing account</p>
+</li>
+<li>
+<p>The USERID must be in the <code>X1234567X</code> format, where X can be any lower or upper case letter alphabet, and there must be exactly 7 digits between the two <code>X</code></p>
+</li>
+<li>
+<p>USERID must belong to an existing account</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>login X1234567X zaq1xsw2cde3</code><br>
+Logs into Address book with user ID as X1234567X and password as zaq1xsw2cde3.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Password is case-sensitive!</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>=== Creating a new user account: <code>createaccount</code></p>
+</div>
+<div class="paragraph">
+<p>Creates a new user account in the address book.<br>
+Format: <code>createaccount user/USERID pass/PASSWORD</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>user/ and pass/ are required prefixes before USERID and PASSWORD</p>
+</li>
+<li>
+<p>USERID refers to student matriculation number</p>
+</li>
+<li>
+<p>PASSWORD refers to any desired passphrases the new user wishes to have</p>
+</li>
+<li>
+<p>The USERID must be in the <code>X1234567X</code> format, where X can be any lower or upper case letter alphabet, and there must be exactly 7 digits between the two <code>X</code></p>
+</li>
+<li>
+<p>USERID must not belong to an existing account</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>createaccount user/X1234567X pass/zaq1xsw2cde3</code><br>
+Creates a new account with user ID as X1234567X and password as zaq1xsw2cde3 in the address book.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>=== Deleting an existing user account: <code>deleteaccount</code></p>
+</div>
+<div class="paragraph">
+<p>Deletes an existing account from the address book.<br>
+Format: <code>deleteaccount USERID PASSWORD</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>USERID refers to student matriculation number</p>
+</li>
+<li>
+<p>PASSWORD refers to passphrase associated with USERID of the account</p>
+</li>
+<li>
+<p>The USERID must be in the <code>X1234567X</code> format, where X can be any lower or upper case letter alphabet, and there must be exactly 7 digits between the two <code>X</code></p>
+</li>
+<li>
+<p>USERID must belong to an existing account</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>deleteaccount X1234567X zaq1xsw2cde3</code><br>
+Deletes the current account with user ID as X1234567X and password as zaq1xsw2cde3 in the address book.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>=== Changing the password of an existing user account: <code>changepassword</code></p>
+</div>
+<div class="paragraph">
+<p>Changes the password of an existing account from the address book.<br>
+Format: <code>changepassword USERID CURRENTPASSWORD NEWPASSWORD</code></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>USERID refers to student matriculation number</p>
+</li>
+<li>
+<p>CURRENTPASSWORD refers to current passphrase associated with USERID of the account</p>
+</li>
+<li>
+<p>The USERID must be in the <code>X1234567X</code> format, where X can be any lower or upper case letter alphabet, and there must be exactly 7 digits between the two <code>X</code></p>
+</li>
+<li>
+<p>USERID must belong to an existing account</p>
+</li>
+<li>
+<p>NEWPASSWORD must be different from CURRENTPASSWORD</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>changepassword X1234567X zaq1xsw2cde3 1qaz2wsx3edc</code><br>
+Changes the password of the current account with user ID as X1234567X, from "zaq1xsw2cde3" to "1qaz2wsx3edc" in the address book.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>=== Viewing help : <code>help</code></p>
+</div>
 <div class="paragraph">
 <p>Format: <code>help</code></p>
 </div>
+<div class="paragraph">
+<p>=== Adding a person: <code>add</code></p>
 </div>
-<div class="sect2">
-<h3 id="adding-a-person-code-add-code"><a class="link" href="#adding-a-person-code-add-code">3.2. Adding a person: <code>add</code></a></h3>
 <div class="paragraph">
 <p>Adds a person to the address book<br>
 Format: <code>add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]&#8230;&#8203;</code></p>
@@ -157,16 +299,16 @@ A person can have any number of tags (including 0)
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>=== Listing all persons : <code>list</code></p>
 </div>
-<div class="sect2">
-<h3 id="listing-all-persons-code-list-code"><a class="link" href="#listing-all-persons-code-list-code">3.3. Listing all persons : <code>list</code></a></h3>
 <div class="paragraph">
 <p>Shows a list of all persons in the address book.<br>
 Format: <code>list</code></p>
 </div>
+<div class="paragraph">
+<p>=== Editing a person : <code>edit</code></p>
 </div>
-<div class="sect2">
-<h3 id="editing-a-person-code-edit-code"><a class="link" href="#editing-a-person-code-edit-code">3.4. Editing a person : <code>edit</code></a></h3>
 <div class="paragraph">
 <p>Edits an existing person in the address book.<br>
 Format: <code>edit INDEX [n/NAME] [p/PHONE] [e/EMAIL] [a/ADDRESS] [t/TAG]&#8230;&#8203;</code></p>
@@ -209,12 +351,12 @@ Edits the name of the 2nd person to be <code>Betsy Crower</code> and clears all 
 </li>
 </ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="locating-persons-by-name-code-find-code"><a class="link" href="#locating-persons-by-name-code-find-code">3.5. Locating persons by name: <code>find</code></a></h3>
 <div class="paragraph">
-<p>Finds persons whose names contain any of the given keywords.<br>
-Format: <code>find KEYWORD [MORE_KEYWORDS]</code></p>
+<p>=== Locating persons: <code>find</code></p>
+</div>
+<div class="paragraph">
+<p>Finds persons in the displayed list whose names/tags contain any of the given keywords.<br>
+Format: <code>find [\tag tags]  KEYWORD [MORE_KEYWORDS]</code></p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -227,23 +369,21 @@ Format: <code>find KEYWORD [MORE_KEYWORDS]</code></p>
 <p>The order of the keywords does not matter. e.g. <code>Hans Bo</code> will match <code>Bo Hans</code></p>
 </li>
 <li>
-<p>Only the name is searched.</p>
-</li>
-<li>
 <p>Only full words will be matched e.g. <code>Han</code> will not match <code>Hans</code></p>
 </li>
 <li>
-<p>Persons matching at least one keyword will be returned (i.e. <code>OR</code> search). e.g. <code>Hans Bo</code> will return <code>Hans Gruber</code>, <code>Bo Yang</code></p>
+<p>For back-to-back find commands, the most recent find command will search according to the previous find command</p>
 </li>
 </ul>
-</div>
-</div>
 </div>
 <div class="paragraph">
 <p>Examples:</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p><code>find John</code><br></p>
+</li>
 <li>
 <p><code>find John</code><br>
 Returns <code>john</code> and <code>John Doe</code></p>
@@ -252,17 +392,77 @@ Returns <code>john</code> and <code>John Doe</code></p>
 <p><code>find Betsy Tim John</code><br>
 Returns any person having names <code>Betsy</code>, <code>Tim</code>, or <code>John</code></p>
 </li>
+<li>
+<p><code>find \tag President</code><br>
+Returns any person with the tag <code>President</code></p>
+</li>
+<li>
+<p><code>find \tag President Vice_President</code><br>
+Returns any person with the tag <code>President</code> OR <code>Vice_President</code>.</p>
+</li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="deleting-a-person-code-delete-code"><a class="link" href="#deleting-a-person-code-delete-code">3.6. Deleting a person : <code>delete</code></a></h3>
+</div>
 <div class="paragraph">
-<p>Deletes the specified person from the address book.<br>
-Format: <code>delete INDEX</code></p>
+<p><strong>Executing back-to-back find commands:</strong></p>
+</div>
+<div class="paragraph">
+<p>Assume that the displayed list contains 3 person initially.</p>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="images/InitialList.png" alt="InitialList">
+</div>
+</div>
+<div class="paragraph">
+<p>After executing the command "find \tag VIP"<br>
+the displayed list will contain 2 person, both with the tag 'VIP'</p>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="images/SecondList.png" alt="SecondList">
+</div>
+</div>
+<div class="paragraph">
+<p>After executing the command "find \tag President"<br>
+it will filter according to the previous displayed list<br>
+the displayed list will contain 1 person, with the tag 'President'<br></p>
+</div>
+<div class="imageblock" style="text-align: left">
+<div class="content">
+<img src="images/ThirdList.png" alt="ThirdList">
+</div>
 </div>
 <div class="sidebarblock">
 <div class="content">
+<div class="paragraph">
+<p>=== Resetting Search History: <code>clearsearch</code></p>
+</div>
+<div class="paragraph">
+<p>Resets search history back to the very initial stage before any find commands are executed
+Format: <code>clearsearch</code></p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>To be used together with the find command</p>
+</li>
+</ul>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p>=== Deleting : <code>delete</code></p>
+</div>
+<div class="paragraph">
+<p>Deletes a specific person from the address book.<br>
+Format: <code>delete [-a all] [INDEX]</code></p>
+</div>
+</div>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -274,10 +474,13 @@ Format: <code>delete INDEX</code></p>
 <li>
 <p>The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
 </li>
+<li>
+<p>If -a option is selected, all contacts on the list will be deleted and INDEX will be ignored.</p>
+</li>
 </ul>
 </div>
-</div>
-</div>
+<div class="sidebarblock">
+<div class="content">
 <div class="paragraph">
 <p>Examples:</p>
 </div>
@@ -293,17 +496,22 @@ Deletes the 2nd person in the address book.</p>
 <code>delete 1</code><br>
 Deletes the 1st person in the results of the <code>find</code> command.</p>
 </li>
+<li>
+<p><code>list</code><br>
+<code>delete -a</code><br>
+Deletes everyone in the results of the <code>find</code> command.</p>
+</li>
 </ul>
 </div>
+<div class="paragraph">
+<p>=== Selecting a person : <code>select</code></p>
 </div>
-<div class="sect2">
-<h3 id="selecting-a-person-code-select-code"><a class="link" href="#selecting-a-person-code-select-code">3.7. Selecting a person : <code>select</code></a></h3>
 <div class="paragraph">
 <p>Selects the person identified by the index number used in the displayed person list.<br>
 Format: <code>select INDEX</code></p>
 </div>
-<div class="sidebarblock">
-<div class="content">
+</div>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -317,8 +525,8 @@ Format: <code>select INDEX</code></p>
 </li>
 </ul>
 </div>
-</div>
-</div>
+<div class="sidebarblock">
+<div class="content">
 <div class="paragraph">
 <p>Examples:</p>
 </div>
@@ -336,9 +544,9 @@ Selects the 1st person in the results of the <code>find</code> command.</p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>=== Listing entered commands : <code>history</code></p>
 </div>
-<div class="sect2">
-<h3 id="listing-entered-commands-code-history-code"><a class="link" href="#listing-entered-commands-code-history-code">3.8. Listing entered commands : <code>history</code></a></h3>
 <div class="paragraph">
 <p>Lists all the commands that you have entered in reverse chronological order.<br>
 Format: <code>history</code></p>
@@ -357,9 +565,9 @@ Format: <code>history</code></p>
 </tr>
 </table>
 </div>
+<div class="paragraph">
+<p>=== Undoing previous command : <code>undo</code></p>
 </div>
-<div class="sect2">
-<h3 id="undoing-previous-command-code-undo-code"><a class="link" href="#undoing-previous-command-code-undo-code">3.9. Undoing previous command : <code>undo</code></a></h3>
 <div class="paragraph">
 <p>Restores the address book to the state before the previous <em>undoable</em> command was executed.<br>
 Format: <code>undo</code></p>
@@ -402,9 +610,9 @@ The <code>undo</code> command fails as there are no undoable commands executed p
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>=== Redoing the previously undone command : <code>redo</code></p>
 </div>
-<div class="sect2">
-<h3 id="redoing-the-previously-undone-command-code-redo-code"><a class="link" href="#redoing-the-previously-undone-command-code-redo-code">3.10. Redoing the previously undone command : <code>redo</code></a></h3>
 <div class="paragraph">
 <p>Reverses the most recent <code>undo</code> command.<br>
 Format: <code>redo</code></p>
@@ -434,34 +642,105 @@ The <code>redo</code> command fails as there are no <code>undo</code> commands e
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>=== Clearing all entries : <code>clear</code></p>
 </div>
-<div class="sect2">
-<h3 id="clearing-all-entries-code-clear-code"><a class="link" href="#clearing-all-entries-code-clear-code">3.11. Clearing all entries : <code>clear</code></a></h3>
 <div class="paragraph">
 <p>Clears all entries from the address book.<br>
 Format: <code>clear</code></p>
 </div>
+<div class="paragraph">
+<p>=== Submitting data for budget allocation: <code>data</code>
+Submits the data about number of events, expected turnout etc.<br>
+Format: <code>data e/NUMBER OF EVENTS t/TURNOUT</code>
+Example:<br>
+<code>data e/5 t/200</code>
+=== Viewing the allocated budget : <code>viewbudget</code>
+Shows the allocated budget to the user<br>
+Format: <code>viewbudget</code>
+=== Submitting grant request : <code>request</code>
+Submits data about amount of grant needed, the reason and tags the importance level
+Format: <code>request m/AMOUNT r/REASON t/IMPORTANCE LEVEL
+Example:<br>
+`request m/1000 r/for booking auditorium t/medium</code>
+=== Viewing grant request : <code>viewrequest</code>
+Shows a list of all the grant request sorted by order of importance, and if there is a tie, by descending order of amount requested.<br>
+Format: <code>viewrequest</code>
+=== Accepting grant request: <code>accept</code>
+Approves a specific grant request from the list of grants.
+Format: `accept [-a all] [INDEX]</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Approves the request at the specified <code>INDEX</code>.</p>
+</li>
+<li>
+<p>The index refers to the index number shown in the displayed requests list.</p>
+</li>
+<li>
+<p>The index <strong>must be a positive integer</strong> 1, 2, 3, &#8230;&#8203;</p>
+</li>
+<li>
+<p>If -a option is selected, all requests on the list will be approved and INDEX will be ignored.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>viewrequest</code><br>
+<code>accept 2</code><br>
+Approves the 2nd request in the list of grant requests.</p>
+</li>
+<li>
+<p><code>viewrequest</code><br>
+<code>accept -a</code><br>
+Approves all the requests in the list.</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel2">
+<li><a href="#exiting-the-program-code-exit-code">1. Exiting the program : <code>exit</code></a></li>
+<li><a href="#saving-the-data">2. Saving the data</a></li>
+<li><a href="#encrypting-data-files-code-coming-in-v2-0-code">3. Encrypting data files <code>[coming in v2.0]</code></a></li>
+<li><a href="#faq">4. FAQ</a></li>
+<li><a href="#command-summary">5. Command Summary</a></li>
+</ul>
+</div>
 </div>
 <div class="sect2">
-<h3 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">3.12. Exiting the program : <code>exit</code></a></h3>
+<h3 id="exiting-the-program-code-exit-code"><a class="link" href="#exiting-the-program-code-exit-code">1. Exiting the program : <code>exit</code></a></h3>
 <div class="paragraph">
 <p>Exits the program.<br>
 Format: <code>exit</code></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="saving-the-data"><a class="link" href="#saving-the-data">3.13. Saving the data</a></h3>
+<h3 id="saving-the-data"><a class="link" href="#saving-the-data">2. Saving the data</a></h3>
 <div class="paragraph">
 <p>Address book data are saved in the hard disk automatically after any command that changes the data.<br>
 There is no need to save manually.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="encrypting-data-files-code-coming-in-v2-0-code"><a class="link" href="#encrypting-data-files-code-coming-in-v2-0-code">3.14. Encrypting data files <code>[coming in v2.0]</code></a></h3>
+<h3 id="encrypting-data-files-code-coming-in-v2-0-code"><a class="link" href="#encrypting-data-files-code-coming-in-v2-0-code">3. Encrypting data files <code>[coming in v2.0]</code></a></h3>
 <div class="paragraph">
 <p><em>{explain how the user can enable/disable data encryption}</em></p>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -479,14 +758,29 @@ There is no need to save manually.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Add</strong> <code>add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]&#8230;&#8203;</code><br>
-e.g. <code>add n/James Ho p/22224444 e/jamesho@example.com a/123, Clementi Rd, 1234665 t/friend t/colleague</code></p>
+<p><strong>Login</strong> : <code>login USERID PASSWORD</code>
+e.g. <code>login A1234567M zaq1xsw2cde3</code></p>
+</li>
+<li>
+<p><strong>Create Account</strong> : <code>createaccount USERID PASSWORD</code><br>
+e.g. <code>createaccount user/A1234567M pass/zaq1xsw2cde3</code></p>
+</li>
+<li>
+<p><strong>Delete Account</strong> : <code>deleteaccount USERID PASSWORD</code><br>
+e.g. <code>deleteaccount A01234567M zaq1xsw2cde3</code></p>
+</li>
+<li>
+<p><strong>Change Password</strong> : <code>changepassword USERID CURRENTPASSWORD NEWPASSWORD</code><br>
+e.g. <code>changepassword A01234567M zaq1xsw2cde3 1qaz2wsx3edc</code></p>
+</li>
+<li>
+<p><strong>Add</strong> <code>add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]&#8230;&#8203;</code><br></p>
 </li>
 <li>
 <p><strong>Clear</strong> : <code>clear</code></p>
 </li>
 <li>
-<p><strong>Delete</strong> : <code>delete INDEX</code><br>
+<p><strong>Delete</strong> : <code>delete [-a all][INDEX]</code><br>
 e.g. <code>delete 3</code></p>
 </li>
 <li>
@@ -494,8 +788,9 @@ e.g. <code>delete 3</code></p>
 e.g. <code>edit 2 n/James Lee e/jameslee@example.com</code></p>
 </li>
 <li>
-<p><strong>Find</strong> : <code>find KEYWORD [MORE_KEYWORDS]</code><br>
-e.g. <code>find James Jake</code></p>
+<p><strong>Find</strong> : <code>find [\tag tags] KEYWORD [MORE_KEYWORDS]</code><br>
+e.g. <code>find James Jake</code><br>
+e.g <code>find \tag President</code></p>
 </li>
 <li>
 <p><strong>List</strong> : <code>list</code></p>
@@ -516,7 +811,25 @@ e.g.<code>select 2</code></p>
 <li>
 <p><strong>Redo</strong> : <code>redo</code></p>
 </li>
+<li>
+<p><strong>Submitting data for budget</strong> : <code>data e/NUMBER OF EVENTS t/TURNOUT</code><br>
+e.g. <code>data e/5 t/200</code></p>
+</li>
+<li>
+<p><strong>Submitting grant request</strong> : request m/AMOUNT r/REASON t/IMPORTANCE LEVEL`<br>
+e.g. <code>request m/1000 r/for booking auditorium t/medium</code></p>
+</li>
+<li>
+<p><strong>Viewing grant request</strong> : <code>viewrequest</code></p>
+</li>
+<li>
+<p><strong>Accepting a grant request</strong> : <code>accept [-a all] [INDEX]</code><br>
+e.g. <code>viewrequest</code><br>
+       <code>accept 2</code><br>
+e.g. <code>viewrequest</code><br>
+     <code>accept -a</code></p>
+</li>
 </ul>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-07-28 08:52:29 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2018-10-07 10:50:07 UTC</div></div></div></body></html>
